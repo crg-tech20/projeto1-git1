@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="#" />  
+    <title>Diário | Upload cmdb</title>
+      
+    <link rel="shortcut icon" href="img/serpro4.png"  />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/jquery/jquery-ui.min.css">
+    
+</head>
+   <body>
+        <span id="visualizar"></span>
+        <form action="controlers/file_upload.php" method="POST" enctype="multipart/form-data" autocomplet="off" id="formulario">
+            <input type="file" name="cmdb" value="procurar" >
+            <input type="submit" id="submit" >
+        </form>
+      
+
+          <!-- jQuery, Popper.js, Bootstrap JS -->
+        <script src="assets/jquery/jquery-3.3.1.min.js"></script>
+<!--         <script src="assets/jquery/jquery-ui.min.js"></script> -->
+        <script src="assets/jquery/jquery.form.js"></script>
+        
+   </body>
+   <script type="text/javascript" >
+$(document).ready(function() {
+    $('#submit').click(function() {
+        $("#visualizar").html('');
+        $("#visualizar").html('<img src="img/aguarde.gif" />');
+        $("#formulario").ajaxForm({
+            target: '#visualizar'
+        }).submit();
+    });
+});
+</script>
+</html>
+
