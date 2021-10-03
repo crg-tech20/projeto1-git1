@@ -79,6 +79,7 @@
                         <thead class="text-center">
                             <tr>
                                 <!--
+                                    
                                 Comentar o id e o botão do id. Lá no main.js => comentar order e descomentar ordering: false e vira ordenado do banco
                                 com o select    https://datatables.net/reference/option/ordering
 
