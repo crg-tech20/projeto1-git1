@@ -78,10 +78,7 @@
                     <table id="crudlocalidades" class="table table-striped table-bordered table-condensed" style="width:100%" >
                         <thead class="text-center">
                             <tr>
-                                <!--
-                                    
-                                    
-                                Comentar o id e o botão do id. Lá no main.js => comentar order e descomentar ordering: false e vira ordenado do banco
+                                <!-- Comentar o id e o botão do id. Lá no main.js => comentar order e descomentar ordering: false e vira ordenado do banco
                                 com o select    https://datatables.net/reference/option/ordering
 
                                 <th>Id</th> esta também no main.js e acima nos botões
